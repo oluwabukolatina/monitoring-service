@@ -1,6 +1,6 @@
 import axios from 'axios';
+import {GITHUB_TOKEN} from "../secret";
 const API_URL = 'https://api.github.com/repos/';
-const GITHUB_TOKEN = ''
 const config = {
   headers: { Authorization: `token ${GITHUB_TOKEN}` },
 };

@@ -6,7 +6,7 @@ import CommitService from './component/commit/commit.service';
 import CommitModel from './component/commit/commit.model';
 import { monitor } from './monitor';
 
-export const SEARCH_INTERVAL = 3600000;
+export const SEARCH_INTERVAL = 10000//3600000;
 const Sync = {
   async syncRepository(data: {
     owner: string;

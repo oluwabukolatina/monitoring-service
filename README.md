@@ -22,7 +22,7 @@ Build a service in Typescript that fetches data from GitHub's public APIs to ret
 
 - **Node.js** (version 14 or higher)
 - **npm** (Node Package Manager)
-- **GitHub Personal Access Token**
+- **GitHub Personal Access Token** https://github.com/settings/tokens
 
 ## Installation
 

@@ -1,7 +1,6 @@
 import { connect } from 'mongoose';
-import * as dotenv from 'dotenv';
-dotenv.config();
+import {DATABASE_URL, DATABASE_TEST_URL} from "../secret";
 export const connectToDatabase = async () => {
     return connect(
-     process.env.NODE_ENV  === 'test'?   String( process.env.DATABASE_TEST_URL):   String( process.env.DATABASE_URL));
+     process.env.NODE_ENV  === 'test'?   DATABASE_TEST_URL:  DATABASE_URL);
 };

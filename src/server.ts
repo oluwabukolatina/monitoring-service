@@ -1,7 +1,8 @@
 import { connectToDatabase } from './db';
-import Sync, { SEARCH_INTERVAL } from './sync';
-import { monitor } from './monitor';
+import Sync from './sync';
+import * as dotenv from 'dotenv';
 
+dotenv.config();
 async function main() {
   try {
     await connectToDatabase();
